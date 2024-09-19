@@ -1,6 +1,7 @@
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
 }
 
 .navbar-brand span {

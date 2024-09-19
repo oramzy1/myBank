@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     
     <!-- Google Font (Optional for better typography) -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -109,10 +109,16 @@
                 <h2>Create Your Account</h2>
                 
                 <!-- Registration Form -->
-                <form>
+                <form
+                header
+                 id="registerForm">
                     <div class="mb-3">
-                        <label for="fullName" class="form-label">Full Name</label>
-                        <input type="text" class="form-control" id="fullName" placeholder="John Doe" required>
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="John" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder=" Doe" required>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email Address</label>
@@ -120,22 +126,14 @@
                     </div>
                     <div class="mb-3">
                         <label for="phone" class="form-label">Phone Number</label>
-                        <input type="tel" class="form-control" id="phone" placeholder="+234 123 456 789" required>
+                        <input type="text" class="form-control" id="phone" placeholder="+234 123 456 789"  pattern="^\+234\d{10}$" maxlength="14" minlength="14" required>
                     </div>
-                    <div class="mb-3">
-                        <label for="accountType" class="form-label">Account Type</label>
-                        <select class="form-select" id="accountType" required>
-                            <option value="">Select Account Type</option>
-                            <option value="savings">Savings Account</option>
-                            <option value="current">Current Account</option>
-                            <option value="business">Business Account</option>
-                        </select>
-                    </div>
+                    
                     <div class="mb-3">
                         <label for="password" class="form-label">Password</label>
                         <input type="password" class="form-control" id="password" required>
                     </div>
-                    <button type="submit" class="btn btn-primary w-100">Register</button>
+                    <button id="regBtn" type="submit" class="btn btn-primary w-100">Register</button>
                 </form>
                 
                 <!-- Footer with Login Link -->
@@ -147,7 +145,8 @@
     </div>
   </div>
     <!-- Bootstrap JS -->
-    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./jquery.min.js"></script>
     <script src="./aos.js"></script>
     <script src="./script.js"></script>
 </body>
