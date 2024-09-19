@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking App</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./aos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=RocknRoll+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark myNavBar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <h3>My<span>Bank</span></h3>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon fs-6"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Personal</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#whoWeAre">Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Company</a>
+                    </li>
+                    <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Investor Relations</a>
+                    </li>
+                    <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary px-4" href="#sign-in">Sign In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+   <section>     
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <ul class="carousel-indicators d-none">
+            <div
+                data-bs-target="#carouselId"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="First slide"
+            ></div>
+            <div
+                data-bs-target="#carouselId"
+                data-bs-slide-to="1"
+                aria-label="Second slide"
+            ></div>
+            <div
+                data-bs-target="#carouselId"
+                data-bs-slide-to="2"
+                aria-label="Third slide"
+            ></div>
+        </ul>
+        <div class="carousel-inner" role="listbox">
+            <div data-aos="zoom-out" data-aos-duration="2000" class="carousel-item active">
+                <img
+                    height="750px"
+                    src="./img/tall 1.jpg "
+                    class="w-100 d-block"
+                    alt="First slide"
+                />
+                <div class="carousel-caption d-block">
+                    <h1 class="px-0 fw-bolder">Enjoy <br>Quality Services <br>At Your Fingertips</h1>
+                    <button onclick="document.location.href='register.html'" class="separate  text-center">Open An Account</button>
+                    
+                    
+                </div>
+            </div>
+            <div data-aos="fade-down" data-aos-duration="2000" class="carousel-item">
+                <img
+                    height="750px"
+                    src="./img/portfolio (3).jpg"
+                    class="w-100 d-block"
+                    alt="Second slide"
+                />
+                <div class="carousel-caption d-block">
+                    <h1 class="fw-bolder">Make <br> Seamless <br> Transactions</h1>
+                    <button onclick="document.location.href='register.html'" class="separate  text-center">Get Started</button><br>
+                     <button class="btn btn-primary mt-3">Learn More</button>
+
+                </div>
+            </div>
+            <div data-aos="fade-down" data-aos-duration="2000" class="carousel-item last">
+                <img
+                    height="750px"
+                    src="./img/my connect.jpg"
+                    class="w-100 d-block"
+                    alt="Third slide"
+                />
+                <div class="carousel-caption d-block">
+                    <h1 class="fw-bolder">Massive <br> Cashbacks</h1> 
+                    <button onclick="document.location.href='register.html'" class="separate  text-center">Open An Account</button><br>
+                     <button class="btn btn-primary mt-3">Learn More</button>
+                
+                </div>
+            
+        </div>
+        <button
+            class="carousel-control-prev d-none"
+            type="button"
+            data-bs-target="#carouselId"
+            data-bs-slide="prev"
+        >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+            class="carousel-control-next d-none"
+            type="button"
+            data-bs-target="#carouselId"
+            data-bs-slide="next"
+        >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+   </section>
+   <section><marquee behavior="" direction="">
+    <i class="fa-solid fa-bell text-danger">New Savings Account Interest Rates: Up to 5% Annual Yield! Exclusive Fixed Deposit Rates: Earn up to 7% Interest!</i>
+   </marquee></section>
+   <!-- Who we are -->
+   <section>
+    <div class="container we-are mt-5">
+        <div class="row border-2">
+            <h1 id="whoWeAre" class="text-center fw-bold mb-5">Who We <span class="text-primary">Are</span></h1>
+            <div class="col-md-6">
+                <img src="./img/network.7deb539d.png" class="img-fluid mb-4" alt="About us">
+            </div>
+            <div class="col-md-6">
+                <h5 class="text-dark fw-bold">About My<span class="text-primary">Bank</span></h5>
+                <p class="text-dark">Founded in 2020, My<span class="text-primary">Bank</span> is dedicated to providing exceptional customer service, innovative solutions, and a strong commitment to our values. We strive to create a place where every individual feels heard, valued, and respected.</p>
+                <p class="text-dark">We place our customers at the heart of everything we do. Every decision we make is guided by our desire to improve your banking experience.</p>
+                <p class="text-dark"> Embracing cutting-edge technology to bring you modern banking tools, from seamless mobile banking to secure online transactions, ensuring banking is always at your fingertips.</p>
+                <p class="text-dark">We believe in transparency, honesty, and fairness. Our strong ethical foundation means you can trust us to handle your finances responsibly.
+
+                </p>
+                <p class="text-dark"> Whether you're saving for a home, investing for the future, or managing day-to-day expenses, MyBank offers personalized solutions that empower your financial journey.</p>
+                <p class="text-dark">My<span class="text-primary">Bank</span> fosters an inclusive environment, welcoming people from all walks of life. We believe that diversity strengthens our team and enhances our ability to serve our customers.</p>
+                <p class="text-dark">We're more than a bank – we're part of the community. MyBank is committed to supporting local initiatives, small businesses, and charitable causes that uplift and enrich the communities we serve</p>
+                <p class="text-dark"></p>
+    </div>
+   </section>
+   <!-- Why choose Us -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6"><div data-aos="zoom-out-left" data-aos-duration="3000" class="col-md-6 d-flex align-items-center column second"></div>
+                <div>
+                  <h2 style="font-family: 'RocknRoll One', sans-serif;" class="fw-bold text-primary pb-4">Why Choose Us?</h2>
+                  <div>
+                      <h6 class="fw-bold"><i class="fa-regular fa-circle-check text-danger"></i> Unmatched Security</h6>
+                      <small>Our platform offers unparalleled security and reliability to protect your personal information.</small>
+                    </div>
+                  <div>
+                      <h6 class="fw-bold pt-2"><i class="fa-regular fa-circle-check text-danger"></i> 24/7 Customer Support</h6>
+                      <small>Banking should be easy, and we're here to help anytime you need it. Our dedicated customer support team is available around the clock.</small>
+                  </div>
+                  <div>
+                      <h6 class="fw-bold pt-2"><i class="fa-regular fa-circle-check text-danger"></i> Easy and Convenient Access</h6>
+                      <small> With our mobile banking app, you can manage your finances from anywhere, at any time.</small>
+                    </div>
+                    <div>
+                        <h6 class="fw-bold pt-2"><i class="fa-regular fa-circle-check text-danger"></i> Competitive Interest Rates</h6>
+                        <small> Grow your savings faster with some of the most competitive interest rates in the market.</small>
+                    </div>
+                    <div>
+                        <h6 class="fw-bold pt-2"><i class="fa-regular fa-circle-check text-danger"></i> Tailored Financial Solutions</h6>
+                        <small>Whether you're saving for the future or expanding your business, we offer personalized banking solutions that fit your needs.</small>
+                    </div>
+                    <div>
+                        <h6 class="fw-bold pt-2"><i class="fa-regular fa-circle-check text-danger"></i> Global Reach</h6>
+                        <small> With a network of international partners, you can access your money globally and securely, making traveling or overseas transactions seamless.</small>
+                    </div>
+                    <div>
+                        <h6 class="fw-bold pt-2"><i class="fa-regular fa-circle-check text-danger"></i> Community-Focused</h6>
+                        <small>We believe in giving back. By banking with us, you're supporting community initiatives and sustainable projects.</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6"><div data-aos="zoom-out-left" data-aos-duration="3000" class="col-md-6 d-flex align-items-center column second">
+                <img src="./img/test.jpg"  alt=""></div>
+            
+    </div>
+    </div>
+    <!-- Features Section -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5">Our services</h2>
+            <div class="row justify-content-between">
+                <div class="col-md-3 mine">
+                    <img src="./img/very secure.png" height="150" class="img rounded-circle mb-4" alt="Feature 1">
+                    <h5>Secure Online Banking</h5>
+                    <p>Experience a highly secure and reliable online banking platform.</p>
+                </div>
+                <div class="col-md-3 mine my-2">
+                    <img src="./img/instant_transfer-removebg-preview.png" height="150" class="img rounded-circle mb-4" alt="Feature 2">
+                    <h5>Instant Transfers</h5>
+                    <p>Quick and easy transfers with just a few clicks, anytime, anywhere.</p>
+                </div>
+                <div class="col-md-3 mine">
+                    <img src="./img/personalized-removebg-preview.png" height="150" class="rounded-circle mb-4" alt="Feature 3">
+                    <h5>Personalized Support</h5>
+                    <p>24/7 support tailored to meet your banking needs and ensure satisfaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 mt-5">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-5">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Address</h5>
+                    <p>123 Main Street, Lagos, Nigeria</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Phone</h5>
+                    <p>+234 123 456 789</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container text-center">
+            <p class="mb-0">© 2024 MyBank. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./aos.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

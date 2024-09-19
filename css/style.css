@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar-brand span {
+    color: #0066cc;
+}
+.myNavBar{
+    background-color: #1c1c1c;
+}
+.nav-item{
+    margin-right: 3rem;
+}
+.slide{
+    height: 100vh !important;
+}
+
+#hero {
+    position: relative;
+    background-color: #1c1c1c;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#hero .btn {
+    padding: 12px 30px;
+    font-size: 18px;
+}
+#whoWeAre{
+    font-family: "RocknRoll One", sans-serif;
+}
+#features{
+    font-family: "RocknRoll One", sans-serif ;
+}
+#contact{
+    font-family: "RocknRoll One", sans-serif ;
+}
+
+#features img {
+    max-width: 200px;
+}
+
+#features h5 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#features p {
+    font-size: 16px;
+}
+
+#contact h5 {
+    font-weight: 600;
+}
+
+footer {
+    background-color: #1c1c1c;
+    color: #fff;
+}
+.carousel-caption {
+    position: absolute;
+    top: 30%;
+    justify-content: start;
+    text-align: justify;
+    
+}
+.carousel-caption h1{
+    font-family: "RocknRoll One", sans-serif;
+
+}
+.carousel-caption p{
+    font-family: "RocknRoll One", sans-serif;
+
+}
+.carousel-item {
+    transition: opacity 1s ease-in-out;
+    animation-name: fadeIn;
+    animation-duration: 5s;
+}
+  
+.carousel-item.active {
+    opacity: 1;
+}
+marquee{
+    background-color: #a9c5e2;
+}
+.separate{
+    margin-top: 1rem;
+    width: 25rem;
+    color: #fff;
+    background: transparent;
+    height: 4rem;
+    border: .1rem solid #fff;
+    transition-duration: .7s;
+}
+.separate:hover{
+    background-color: #1c1c1c;
+    transform: translateX(3px);
+}
+.we-are{
+    background-color: rgb(248, 244, 244);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.nav-link{
+    display: inline-block !important;
+    border: none !important;
+    color: #fff !important;
+}
+.nav-link::after{
+    content: '' !important;
+    display: block  !important;
+    background-color: #0066cc !important;
+    height: 3px !important;
+    border-radius: 2px !important;
+    transform: scaleX(0) !important;
+    transform-origin: left !important;
+    transition: transform 0.2s !important;
+}
+.nav-link:hover::after{
+    transform-origin: right;
+    transform: scaleX(1);
+}
+  
+  @keyframes fadeIn {
+   0%{
+    opacity: 0.6;
+   }
+   25%{
+    opacity: 1;
+   }
+   50%{
+    opacity: 1;
+   }
+   75%{
+    opacity: 1;
+   }
+   100%{
+    opacity: 1;
+   }
+  }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #hero {
+        height: 60vh;
+        word-spacing: 0.1rem;
+    }
+    #features img {
+        max-width: 150px;
+    }
+    #features h5, #features p {
+        font-size: 14px;
+    }
+    .separate{
+        width: 15rem;
+    }
+}
