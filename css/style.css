@@ -157,4 +157,7 @@ marquee{
     .separate{
         width: 15rem;
     }
+    marquee{
+        margin-top: 3rem;
+    }
 }
